@@ -1,0 +1,35 @@
+body,
+ul,
+li,
+p{
+    margin: 0px;
+    padding: 0%;
+    list-style: none;
+    font-size: 1.3rem;
+    font-family: Arial;
+}
+ul{
+    display: flex;
+    flex-wrap: wrap;
+    /* a propriedade CSS flex-wrap difine se os items flexiveis sao forçadas a ficarem na  mesma linha ou se podem ser qubradas em lnhas em varias. se o argumento for valido, ele define a direção em que as linhas são empilhadas*/
+
+}
+
+li{
+    height: 40vh;
+    flex-grow: 1;
+    /* a propriedade flex CSS,define com um item será posicionando para no espaço dispossivel dentro de seu container*/
+}
+
+li:last-child{
+    flex-grow: 10;
+}
+
+img{
+    max-height: 100%;
+    min-width: 100%;
+    object-fit: cover;
+    /* a propriedade CSS object-fit especifica como o conteudo de um elemento substituto deve ser ajustado a caixa estabelecida pela altura e largura usada*/
+    vertical-align: bottom;
+}
+
